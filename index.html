@@ -1,25 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+    <style>
+        .style1 {
+            background-color: cadetblue;
+            font-family: calibri;
+        }
+
+        .name {
+            font-family: calibri;
+            width: 500px;
+            position: absolute;
+            width: 50%;
+            height: 35vh;
+            justify-content: space-between;
+            padding: 50px 5% 0px 5%;
+            background-color: #161616;
+            left: 20%;
+            top: 50%;
+            transform: translate(-20%, -50%);
+
+        }
+
+        .name .details {
+            color: #8a8b8b;
+            font-size: 16px;
+        }
+        #navs{
+            margin-top: 10px;
+            
+        }
+        #navs button {
+            width: 180px;
+            height: 40px;
+            margin: 10px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            background-color: #000000;
+        }
+        .social {
+            position: absolute;
+            left: 15%;
+            bottom: 245px;
+            display: flex;
+        }
+
+        .social a {
+            margin: 6px 12px;
+
+        }
+
+        .social i {
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+        }
+
+        .social a:hover i {
+            color: #61e7ff;
+            transition: all ease 0.5s;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Webpage</title>
+    <title>My First Personal Webpage</title>
 </head>
-<body link="#00654C" vlink="#CC3311" alink="#336666">
-    <h1>
-        Hello World!
-    </h1>
-    <h2 style = "color: blue; background-color: burlywood;">This is written in h2</h2>
-    <p>
-        Paragraph tag is being used over here.
-    </p>
-    <p>
-        <em style="background-color: aqua;"> Italics is tried here.</em>
-    </p>
 
-    <a href="second.html">
-        Click here to be redirected to the second page of this webpage.
-    </a>
+<body vlink="#FFFFFF"  class="style1">
+    <section id="navs">
+        <nav>
+            <button>
+                <a href="#">Home</a>
+            </button>
+            <button>
+                <a href="about.html">About</a>
+            </button>
+            <button>
+                <a href="second.html">Second Page</a>
+            </button>
+        </nav>
+    </section>
+    <div class="name">
+        <!--hello------->
+        <p>Hello</p>
+        <!--name--->
+        <h1 style="color: rgb(196, 191, 196);">I'm <font color="#17d1ac">Adithya </font> Narayan <font color="#17d1ac">K
+            </font> A</h1>
+        <!--details--------------->
+        <p class="details">Hey there! Check out the cool stuff out here and let me know what you feel. Well, I know it's
+            all me in here. But, what's the fun if it's always about you. *<b>winks</b>*
+            <br /> You can find me via the following platforms.
+        </p>
+
+
+    </div>
+    <!--social---------------->
+    <div class="social">
+        <a href="https://www.linkedin.com/in/adithyanarayanka/"><i class="fab fa-linkedin"></i></a>
+        <a href="http://github.com/adithyanarayan-ltts"><i class="fab fa-github"></i></a>
+    </div>
+
 </body>
+
 </html>
