@@ -3,11 +3,17 @@
 
 <head>
     <style>
-        .mystyle{
+        .mystyle {
             font-size: 25px;
-            background: darkseagreen;
+            height: 750px;
+            background-image: linear-gradient(to bottom right, #17d1ac, #ffffff);
             padding: 20px;
+            font-family: calibri;
             background-color: darkturquoise;
+        }
+
+        h3 {
+            text-align: center;
         }
     </style>
     <meta charset="UTF-8">
@@ -18,34 +24,42 @@
 
 <body class="mystyle">
     <h3>
-        Welcome to the second page of our webpage.
+        Feedback Form
     </h3>
-    <br>
-    <b>Bold font is being tested here.</b>
-    <br />
-    
-    <table>
-        <tr>
-            <td>
-                <p>
-                    <img src="images/image.png" style="height: 50%; width: 50%;"/>
-                </p>
-            </td>
-            <td>
-                <p>
-                    <img src="images/image.png" style="height: 50%; width: 50%;"/>
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p> This is the second row</p>
-            </td>
-            <td>
-                <p>This is the second row.</p>
-            </td>
-        </tr>
-    </table>
+    <form action="index.html" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="birthday">Date of Birth:</label><br>
+        <input type="date" id="birthday" name="birthday"><br>
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="eng">England</option>
+        </select><br>
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" placeholder="Write your comments or feedback.."
+            style="height:150px; width: 500px;"></textarea><br>
+        <div class="star-input">
+            <input type="radio" name="rating" id="rating-5">
+            <label for="rating-5" class="fas fa-star"> Very Impressed</label><br>
+            <input type="radio" name="rating" id="rating-4">
+            <label for="rating-4" class="fas fa-star">Impressed</label><br>
+            <input type="radio" name="rating" id="rating-3">
+            <label for="rating-3" class="fas fa-star">Meh. It's Alright</label><br>
+            <input type="radio" name="rating" id="rating-2">
+            <label for="rating-2" class="fas fa-star">It could be better</label><br>
+            <input type="radio" name="rating" id="rating-1">
+            <label for="rating-1" class="fas fa-star">Dissapointing</label>
+
+            <br><br>
+            <input type="submit" value="Submit">
+    </form>
+
 </body>
 
 </html>

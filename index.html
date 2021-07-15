@@ -5,8 +5,15 @@
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 
     <style>
+        li{
+            display: inline;
+            margin-left: 125px;
+            margin-right: 125px;
+        }
         .style1 {
             background-color: cadetblue;
+            height: 750px;
+            background-image: linear-gradient(to bottom right, #17d1ac, white);
             font-family: calibri;
         }
 
@@ -31,6 +38,8 @@
         }
         #navs{
             margin-top: 10px;
+            padding-left: 50px;
+            background-color: #161616;
             
         }
         #navs button {
@@ -38,9 +47,15 @@
             height: 40px;
             margin: 10px;
             border-radius: 20px;
+            color:rgb(196, 191, 196);
+            cursor: pointer;
             border: none;
             outline: none;
-            background-color: #000000;
+            background-color: #161616;
+        }
+        #navs a :hover {
+            color: #005263;
+            transition: all ease 0.5s;
         }
         .social {
             position: absolute;
@@ -71,18 +86,34 @@
     <title>My First Personal Webpage</title>
 </head>
 
-<body vlink="#FFFFFF"  class="style1">
+<body vlink="#000000"  class="style1">
     <section id="navs">
         <nav>
-            <button>
-                <a href="#">Home</a>
-            </button>
-            <button>
-                <a href="about.html">About</a>
-            </button>
-            <button>
-                <a href="second.html">Second Page</a>
-            </button>
+            <li>
+                <a href="#">
+                    <button><b>Home</b></button>
+                </a>
+            </li>
+            
+            <li>
+                <a href="about.html">
+                    <button>
+                        <b>
+                            About
+                        </b>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="second.html">     
+                    <button>
+                        <b>
+                            Second Page
+                        </b>  
+                    </button>
+                    </a>
+            </li>
+            
         </nav>
     </section>
     <div class="name">
