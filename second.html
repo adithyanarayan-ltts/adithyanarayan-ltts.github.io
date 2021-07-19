@@ -4,61 +4,73 @@
 <head>
     <style>
         .mystyle {
+            width: 1500px;
+            text-align: center;
+            border: 10px solid white;
+            padding: 10px, 10px, 10px, 10px;
+            margin: 10px, 10px, 10px, 10px;
             font-size: 25px;
-            height: 750px;
-            background-image: linear-gradient(to bottom right, #17d1ac, #ffffff);
-            padding: 20px;
+            position: absolute;
+            height: 710px;
+            background-image: linear-gradient(to bottom right, #17d1ac, darkturquoise);
             font-family: calibri;
-            background-color: darkturquoise;
         }
 
         h3 {
             text-align: center;
+            margin-top: 10px;
         }
     </style>
+    <script type="text/javascript" src="app.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second Page</title>
 </head>
 
-<body class="mystyle">
-    <h3>
-        Feedback Form
-    </h3>
-    <form action="index.html" method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email"><br>
-        <label for="birthday">Date of Birth:</label><br>
-        <input type="date" id="birthday" name="birthday"><br>
-        <label for="country">Country:</label><br>
-        <select id="country" name="country">
-            <option value="india">India</option>
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-            <option value="eng">England</option>
-        </select><br>
-        <label for="feedback">Feedback:</label><br>
-        <textarea id="feedback" name="feedback" placeholder="Write your comments or feedback.."
-            style="height:150px; width: 500px;"></textarea><br>
-        <div class="star-input">
-            <input type="radio" name="rating" id="rating-5">
-            <label for="rating-5" class="fas fa-star"> Very Impressed</label><br>
-            <input type="radio" name="rating" id="rating-4">
-            <label for="rating-4" class="fas fa-star">Impressed</label><br>
-            <input type="radio" name="rating" id="rating-3">
-            <label for="rating-3" class="fas fa-star">Meh. It's Alright</label><br>
-            <input type="radio" name="rating" id="rating-2">
-            <label for="rating-2" class="fas fa-star">It could be better</label><br>
-            <input type="radio" name="rating" id="rating-1">
-            <label for="rating-1" class="fas fa-star">Dissapointing</label>
-
-            <br><br>
+<body style="background-image: linear-gradient(to bottom right, #555151, #131111)">
+    <div class="mystyle">
+        <h3>
+            Feedback Form
+        </h3>
+        <form id="myForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" onfocus="this.value=''" onblur="emailValidation()" id="email" name="email"><br><span id="eV"
+                style="font-size: small;"></span><br>
+            <label for="birthday">Date of Birth:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="USA">USA</option>
+                <option value="England">England</option>
+            </select><br><br>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" onblur="feedbackValidation()" name="feedback"
+                placeholder="Write your comments or feedback.." style="height:150px; width: 500px;"></textarea>
+                <br>
+            <span id="fV" style="font-size: small;">
+            </span> <br>
+            <div class="star-input">
+                <input type="radio" name="rating" id="rating-5" value="5">
+                <label for="rating-5" class="fas fa-star"> Very Impressed</label><br>
+                <input type="radio" name="rating" id="rating-4" value="4">
+                <label for="rating-4" class="fas fa-star">Impressed</label><br>
+                <input type="radio" name="rating" id="rating-3" value="3">
+                <label for="rating-3" class="fas fa-star">Meh. It's Alright</label><br>
+                <input type="radio" name="rating" id="rating-2" value="2">
+                <label for="rating-2" class="fas fa-star">It could be better</label><br>
+                <input type="radio" name="rating" id="rating-1" value="1">
+                <label for="rating-1" class="fas fa-star">Dissapointing</label>
+            </div>
             <input type="submit" value="Submit">
-    </form>
+        </form>
+
+    </div>
 
 </body>
 

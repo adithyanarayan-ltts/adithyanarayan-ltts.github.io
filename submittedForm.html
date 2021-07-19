@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .style2 {
+            height: 750px;
+            background-image: linear-gradient(to bottom right, rgb(57, 226, 226), rgb(13, 158, 202));
+            font-family: calibri;
+        }
+
+        li {
+            display: inline;
+            margin-left: 125px;
+            margin-right: 125px;
+        }
+
+        #navs {
+            margin-top: 10px;
+            padding-left: 50px;
+            background-color: #161616;
+
+        }
+
+        #navs button {
+            width: 180px;
+            height: 40px;
+            margin: 10px;
+            border-radius: 20px;
+            color: rgb(196, 191, 196);
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background-color: #161616;
+        }
+
+        #navs a :hover {
+            color: #005263;
+            transition: all ease 0.5s;
+        }
+
+        .show {
+            text-align: center;
+            margin-top: 100px;
+            font-family: calibri;
+        }
+
+        .show button {
+            width: 180px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: #161616;
+            color: thistle;
+
+        }
+
+        .show a :hover {
+            color: #ffffff;
+            transition: all ease 0.5s;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Feedback</title>
+    <script type="text/javascript" src="app.js"></script>
+
+</head>
+
+<body class="style2">
+    <section id="navs">
+        <nav>
+            <li>
+                <a href="index.html">
+                    <button><b>Home</b></button>
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    <button>
+                        <b>
+                            About
+                        </b>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="second.html">
+                    <button>
+                        <b>
+                            Feedback
+                        </b>
+                    </button>
+                </a>
+            </li>
+
+        </nav>
+    </section><br>
+    <div class="show">
+        <a>
+            <button type="button" onclick="display()"><b>Show Feedback</b></button>
+        </a>
+        <!-- <p id="result"></p> -->
+        <h4 id="name"></h4>
+        <h4 id="email"></h4>
+        <h4 id="dob"></h4>
+        <h4 id="country"></h4>
+        <h4 id="feedback"></h4>
+        <h4 id="rating"></h4>
+    </div>
+
+
+</body>
+
+</html>
